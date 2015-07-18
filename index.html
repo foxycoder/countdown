@@ -1,0 +1,24 @@
+<doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/flipclock.css">
+    <link rel="stylesheet" href="assets/css/countdown.css">
+  </head>
+  <body>
+    <div class="countdown">
+      <h1>Time until Demos</h1>
+      <div id="clock"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/flipclock.min.js"></script>
+    <script>
+      var time = 7200;
+      var clock = $('#clock').FlipClock({
+        countdown: true
+      });
+      clock.setTime(9900)
+      clock.start()
+    </script>
+  </body>
+</html>
